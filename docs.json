@@ -10,18 +10,32 @@
     "groups": [
       {
         "group": "Manage Tier Zero Code",
-          "pages": [
-            {
-              "group": "Identity Providers",
-              "icon": "id-card",
-              "pages": [
-                "identity-providers/add-identity-providers",
-                "identity-providers/microsoft-entra-id",
-                "identity-providers/google-workspace",
-                "identity-providers/okta"
-              ]
-            }
-          ]
+        "pages": [
+          {
+            "group": "User Integrations",
+            "icon": "user",
+            "pages": [
+              "manage-tier-zero-code/user-integrations/add-user-integration"
+            ]
+          },
+          {
+            "group": "Device Integrations",
+            "icon": "laptop",
+            "pages": [
+              "manage-tier-zero-code/device-integrations/add-device-integration"
+            ]
+          },
+          {
+            "group": "Identity Providers",
+            "icon": "id-card",
+            "pages": [
+              "identity-providers/add-identity-providers",
+              "identity-providers/microsoft-entra-id",
+              "identity-providers/google-workspace",
+              "identity-providers/okta"
+            ]
+          }
+        ]
       }
     ]
   }
