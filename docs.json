@@ -9,7 +9,7 @@
   "navigation": {
     "groups": [
       {
-        "group": "Manage Pangolin",
+        "group": "Manage Tier Zero Code",
           "pages": [
             "identity-providers/add-identity-providers",
             "identity-providers/microsoft-entra-id",
