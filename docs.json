@@ -11,10 +11,16 @@
       {
         "group": "Manage Tier Zero Code",
           "pages": [
-            "identity-providers/add-identity-providers",
-            "identity-providers/microsoft-entra-id",
-            "identity-providers/google-workspace",
-            "identity-providers/okta"
+            {
+              "group": "Identity Providers",
+              "icon": "id-card",
+              "pages": [
+                "identity-providers/add-identity-providers",
+                "identity-providers/microsoft-entra-id",
+                "identity-providers/google-workspace",
+                "identity-providers/okta"
+              ]
+            }
           ]
       }
     ]
