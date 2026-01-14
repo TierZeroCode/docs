@@ -4,7 +4,9 @@
   "name": "Tier Zero Code Docs",
   "description": "An enterprise-level security dashboard designed to correlate and manage user & endpoint data from multiple distributed security tools and platforms.",
   "colors": {
-    "primary": "#0D9373"
+    "primary": "#0d2894",
+    "light": "#0680c9",
+    "dark": "#1e1480"
   },
   "navigation": {
     "groups": [
