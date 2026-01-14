@@ -9,6 +9,12 @@
   "navigation": {
     "groups": [
       {
+        "group": "About",
+        "pages": [
+          "about/how-tier-zero-code-works"
+        ]
+      },
+      {
         "group": "Manage Tier Zero Code",
         "pages": [
           {
