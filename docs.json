@@ -1,21 +1,21 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Documentation",
+  "theme": "aspen",
+  "name": "Tier Zero Code Docs",
+  "description": "An enterprise-level security dashboard designed to correlate and manage user & endpoint data from multiple distributed security tools and platforms."
   "colors": {
     "primary": "#0D9373"
   },
   "navigation": {
-    "dropdowns": [
-      {
-        "dropdown": "Identity Providers",
-        "pages": [
-          "identity-providers/add-identity-providers",
-          "identity-providers/microsoft-entra-id",
-          "identity-providers/google-workspace",
-          "identity-providers/okta"
-        ]
-      }
-    ]
-  }
+      "groups": [
+        {
+            "group": "Manage Pangolin",
+            "pages": [
+                "identity-providers/add-identity-providers",
+                "identity-providers/microsoft-entra-id",
+                "identity-providers/google-workspace",
+                "identity-providers/okta"
+            ]
+        },
+    }
 }
