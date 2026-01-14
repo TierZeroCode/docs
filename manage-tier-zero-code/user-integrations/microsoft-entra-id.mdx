@@ -13,3 +13,27 @@ The following steps will integrate Microsoft Entra ID by using an Enterprise App
 | Directory.Read.All                 | Application | Read directory data                    | Yes                    |
 | User.Read.All                      | Application | Read all users' full profiles          | Yes                    |
 | UserAuthenticationMethods.Read.All | Application | Read all users' authentication methods | Yes                    |
+
+## Setting Up Microsoft Entra ID Integration
+
+In Tier Zero Code, go to "Integrations" and click on the Microsoft Entra ID integration then enable and configure integration.
+
+![Image](/images/image-1.png)
+
+In the Microsoft Entra ID Configuration, you'll need the following fields:
+
+<ResponseField name="Client ID" type="string" required>
+  The application (client) ID from the “Overview” section of your app registration
+</ResponseField>
+
+<ResponseField name="Client Secret" type="string" required>
+  The client secret value from the “Certificates and secrets” section of your app registration
+</ResponseField>
+
+<ResponseField name="Tenant ID" type="string" required>
+  The directory (tenant) ID from the “Overview” section of your app registration
+</ResponseField>
+
+<ResponseField name="Tenant Domain" type="string" required>
+  The primary domain from the "Home" of your Microsoft Entra admin center.
+</ResponseField>
