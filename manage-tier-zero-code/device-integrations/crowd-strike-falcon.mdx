@@ -2,3 +2,35 @@
 title: "CrowdStrike Falcon"
 description: "Configure CrowdStrike Falcon Device Integration"
 ---
+
+The following steps will integrate CrowdStrike Falcon by using an OAuth2 API Client & Key with the below API permissions. Currently setup is limited to using an API Client with a client id, secret, base url, and domain.
+
+## Required Permissions
+
+| API                         | Scope | Permission | Description                                                                         |
+| :-------------------------- | :---- | :--------- | :---------------------------------------------------------------------------------- |
+| US-1 / US-2 (EU-1 Untested) | Hosts | Read       | Search for hosts in your environment by platform, hostname, IP, and other criteria. |
+
+## Setting Up CrowdStrike Falcon Device Integration
+
+In Tier Zero Code, go to “Integrations” and click on the CrowdStrike Falcon device integration then enable and configure integration.
+
+![Image](/images/image-4.png)
+
+In the CrowdStrike Falcon Configuration, you'll need the following fields:
+
+<ResponseField name="Client ID" type="string" required>
+  The Client ID from the “OAuth2 API Clients” creation confirmation.
+</ResponseField>
+
+<ResponseField name="Secret" type="string" required={false}>
+  The secret value from the “OAuth2 API Clients” creation confirmation.
+</ResponseField>
+
+<ResponseField name="Base URL" type="string" required={false}>
+  The base url from the “OAuth2 API Clients” creation confirmation.
+</ResponseField>
+
+<ResponseField name="Tenant Domain" type="string" required>
+  The primary domain for the CrowdStrike tenant.
+</ResponseField>
