@@ -4,3 +4,33 @@ description: "Configure Microsoft Intune Device Integration"
 ---
 
 The following steps will integrate Microsoft Intune by using an Enterprise Application / Application Registration with the below API permissions. Currently setup is limited to using a Service Principal Name (SPN) with a client id, client secret, tenant id, and domain.
+
+## Required Permissions
+
+| API / Permissions Name                  | Type        | Description                   | Admin Consent Required |
+| :-------------------------------------- | :---------- | :---------------------------- | :--------------------- |
+| DeviceManagementManagedDevices.Read.All | Application | Read Microsoft Intune devices | Yes                    |
+
+## Setting Up Microsoft Intune Device Integration
+
+In Tier Zero Code, go to “Integrations” and click on the Microsoft Intune device integration then enable and configure integration.
+
+![Image](/images/image-2.png)
+
+In the Microsoft Intune Configuration, you'll need the following fields:
+
+<ResponseField name="Client ID" type="string" required>
+  The application (client) ID from the “Overview” section of your app registration
+</ResponseField>
+
+<ResponseField name="Client Secret" type="string" required>
+  The client secret value from the “Certificates and secrets” section of your app registration
+</ResponseField>
+
+<ResponseField name="Tenant ID" type="string" required>
+  The directory (tenant) ID from the “Overview” section of your app registration
+</ResponseField>
+
+<ResponseField name="Tenant Domain" type="string" required>
+  The primary domain from the "Home" of your Microsoft Entra admin center.
+</ResponseField>
