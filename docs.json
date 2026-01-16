@@ -37,8 +37,9 @@
               "manage-tier-zero-code/device-integrations/microsoft-defender-for-endpoint",
               "manage-tier-zero-code/device-integrations/microsoft-entra-id",
               "manage-tier-zero-code/device-integrations/microsoft-intune",
+              "manage-tier-zero-code/device-integrations/qualys",
               "manage-tier-zero-code/device-integrations/sophos-central",
-              "manage-tier-zero-code/device-integrations/qualys"
+              "manage-tier-zero-code/device-integrations/tailscale"
             ]
           },
           {

@@ -1,0 +1,32 @@
+---
+title: "Tailscale"
+description: "Configure Tailscale Device Integration"
+---
+
+The following steps will integrate Tailscale by using an OAuth2.0 API Client with the below API permissions. Currently setup is limited to using an API Client with a client id, client secret, and domain.
+
+## Required Permissions
+
+| Scope        | Permission | Description                                  |
+| :----------- | :--------- | :------------------------------------------- |
+| devices:core | Read       | Read or modify devices and their properties. |
+
+## Setting Up Tailscale Device Integration
+
+In Tier Zero Code, go to “Integrations” and click on the Tailscale device integration then enable and configure integration.
+
+![Image](/images/image-6.png)
+
+In the Tailscale Configuration, you'll need the following fields:
+
+<ResponseField name="Client ID" type="string" required>
+  The Client ID from the "Trust Credentials" page post creation confirmation.
+</ResponseField>
+
+<ResponseField name="Client Secret" type="string" required={false}>
+  The secret value from the "Trust Credentials" page post creation confirmation.
+</ResponseField>
+
+<ResponseField name="Tenant Domain" type="string" required>
+  The primary domain for the tailnet.
+</ResponseField>
