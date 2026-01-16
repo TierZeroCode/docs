@@ -2,3 +2,27 @@
 title: "Cloudflare Zero Trust"
 description: "Configure Cloudflare Zero Trust Device Integration"
 ---
+
+The following steps will integrate Cloudflare Zero Trust by using an Account API Token with the below API permissions. Currently setup is limited to using an Account API Token with an api token and domain.
+
+## Required Permissions
+
+| API          | Permission                  | Description                     |
+| :----------- | :-------------------------- | :------------------------------ |
+| Custom Token | Account : Zero Trust : Read | Zero Trust Devices and Services |
+
+## Setting Up Cloudflare Zero Trust Device Integration
+
+In Tier Zero Code, go to “Integrations” and click on the Cloudflare Zero Trust device integration then enable and configure integration.
+
+![Image](/images/image-7.png)
+
+In the Cloudflare Zero Trust Configuration, you'll need the following fields:
+
+<ResponseField name="API Token" type="string" required>
+  The API Token value from the "Account API tokens" page post creation confirmation.
+</ResponseField>
+
+<ResponseField name="Tenant Domain" type="string" required>
+  The primary domain for the Cloudflare account Zero Trust platform.
+</ResponseField>
