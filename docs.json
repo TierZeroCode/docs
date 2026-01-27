@@ -20,6 +20,14 @@
         "group": "Manage Tier Zero Code",
         "pages": [
           {
+            "group": "Access Control",
+            "icon": "user-group",
+            "pages": [
+              "manage-tier-zero-code/access-control/create-user",
+              "manage-tier-zero-code/access-control/change-password"
+            ]
+          },
+          {
             "group": "User Integrations",
             "icon": "user",
             "pages": [
